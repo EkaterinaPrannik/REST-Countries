@@ -17,17 +17,31 @@ const CardImage = styled.img`
     box-shadow: var(--shadow)
 `;
 
-const CardBody = styled.div``;
+const CardBody = styled.div`
+    padding: 1.5rem 2rem;
+`;
 
-const CardTitle = styled.h3``;
+const CardTitle = styled.h3`
+    margin: 0 0 1rem;
+    font-size: var(--fz-md);
+`;
 
-const CardList = styled.ul``;
+const CardList = styled.ul`
+    list-style:none;
+    margin:0;
+    width:100%;
+    padding:0;
+`;
 
-const CardListItem = styled.li``;
+const CardListItem = styled.li`
+    font-size: var(--fz-sm);
+    line-height: 1.5;
+    
+`;
 
 
 const Card = ({ img, name, info = [], onClick }) => {
-    console.log(img)
+
     return (
         <Wrapper onClick={onClick}>
             <CardImage  src={img} alt='#'/>
